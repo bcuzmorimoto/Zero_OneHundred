@@ -1,0 +1,11 @@
+package excontador;
+
+public class Contador {
+
+    int valor;
+    
+    public void Contador(){
+        this.valor = 50;
+    }
+    
+}

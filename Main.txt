@@ -1,0 +1,17 @@
+package excontador;
+
+public class Main {
+
+    public static void main(String[] args) {
+            
+        Contador cont = new Contador();
+        ExThread increase = new ExThread(cont, true);
+        ExThread decrease = new ExThread(cont, false);
+
+        //Executando as threads//
+        increase.start();
+        decrease.start();
+
+    }
+    
+}
